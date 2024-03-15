@@ -1,0 +1,1 @@
+sr.reveal('.img2',{dealy:400,origin:'top'});

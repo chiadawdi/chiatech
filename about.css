@@ -1,0 +1,252 @@
+:root{
+    --bg-color:#1f1f21;
+    --text-color:#fff;
+    --main-color:#ffae00;
+    --big-font:7rem;
+    --p-font:1.1rem
+
+}
+
+body{
+    background-color: var(--bg-color);
+}
+.img2{
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    animation: imgg 2s ease-in-out infinite;
+  animation-delay: 2s;
+  margin-left: 15px;
+    
+    
+}
+
+
+
+
+@keyframes imgg{
+  0%{
+      transform: translateY(0);
+
+  }
+  50%{
+      transform: translateY(-22px);
+      
+  }
+  100%{
+      transform: translateY(0);
+      
+  }
+}
+
+
+.card-title {
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: rgb(0, 0, 0);
+    font-family: courier, sans;
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    max-width: 600px;
+    height: 600px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin:  100px auto;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color:#1f1f21;
+    font-size: 20px;
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color:var(--main-color);
+  }
+
+  .button {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    margin: 30px 200px;
+    align-items: center;
+    border: 1px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: -15px;
+
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .button:hover {
+    background: #17795E;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #146c54;
+  }
+  
+  .button:active {
+    border: 1px solid #146c54;
+  }
+  a{
+    text-decoration: none;
+  }
+ 
+  .back-button {
+    text-align: center;
+    margin-top: -680px;
+    margin-left: -550px;
+    
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f8f9;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    background-color: transparent;
+    
+}
+
+.back-button a:hover {
+    background-color:transparent;
+}
+.close{
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+  .card {
+      max-width: 400px;
+      height: 900px;
+      margin: 50px auto;
+      
+  }
+  .button{
+    margin: 0px 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      max-width: 300px;
+      height: 900px;
+      margin: 30px auto;
+      
+  }
+  .button{
+    margin: 0px 80px;
+  }
+}
+  
+  
+
+
+
+
+
